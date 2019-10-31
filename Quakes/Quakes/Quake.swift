@@ -43,3 +43,7 @@ class Quake: NSObject, Decodable {
         super.init()
     }
 }
+
+class QuakeResults: Decodable {
+    let features: [Quake]
+}
