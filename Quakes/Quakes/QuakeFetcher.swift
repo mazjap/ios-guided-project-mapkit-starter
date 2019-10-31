@@ -50,7 +50,8 @@ class QuakeFetcher {
             URLQueryItem(name: "starttime", value: startTime),
             URLQueryItem(name: "endtime", value: endTime),
             URLQueryItem(name: "format", value: "geojson"),
-//            URLQueryItem(name: "minmagnitude", value: "6.5")
+            URLQueryItem(name: "orderby", value: "magnitude")
+//          URLQueryItem(name: "minmagnitude", value: "6.5")
         ]
         
         urlComponents?.queryItems = queryItems
